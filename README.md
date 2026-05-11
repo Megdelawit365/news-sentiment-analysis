@@ -11,7 +11,7 @@ This project investigates the relationship between financial news headlines and 
 │   └── settings.json
 ├── .github/
 │   └── workflows/
-│       └── unittests.yml     
+│       └── unittests.yml           
 ├── .gitignore
 ├── requirements.txt          
 ├── README.md                 
@@ -22,6 +22,7 @@ This project investigates the relationship between financial news headlines and 
 ├── notebooks/                
 │   ├── eda.ipynb
 │   ├── stock_analysis.ipynb
+│   ├── correlation_analysis.ipynb
 │
 ├── src/                      
 │   └── __init__.py
