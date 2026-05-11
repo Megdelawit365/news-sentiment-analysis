@@ -67,55 +67,21 @@ pip install -r requirements.txt
 
 ## Project Overview  
 ### Task 1: Exploratory Data Analysis (EDA) on Financial News
-This phase focuses on understanding the structure and behavior of financial news data.  
-
-#### Descriptive Statistics
-- Distribution of headline lengths
-- Article frequency per publisher
-- Identification of most active news sources
-
-#### Time Analysis
-- Publication trends over time
-- Detection of spikes in news volume
-- Time-of-day analysis of news releases
-
-#### Text Analysis (Topic Exploration)
-- Extraction of frequent keywords and phrases
-- Identification of recurring financial themes
-
-#### Publisher Analysis
-- Ranking publishers by article count
-- Detecting dominant domains in publisher emails 
+- Performed descriptive statistics on headlines to find distribution of headline lengths, article frequency per publisher and to identify most active news sources  
+- Performend time series analysis to detect spikes in news volumes
+- Extracted frequent keywords and phrases from headlines
+- Ranked publishers by article count and detected dominant domains in publisher emails
 
 ### Task 2: Stock Market Analysis with Technical Indicators
-
-This phase focuses on analyzing historical stock price data using financial indicators.
-
-#### Data Preparation
-- Loaded historical stock datasets (AAPL, AMZN, GOOG, META, NVDA)
-- Standardized structure across all assets
 - Handled missing values and ensured proper time indexing
+- Computed technical indicators (SMA, EMA, RSI, MACD) using TA-Lib
+- Additionally computed Daily returns and volatility
 
-#### Moving Averages (SMA & EMA)
-- SMA (20-day) for trend smoothing
-- EMA (20-day) for faster trend response
-- Used to identify trend direction and crossovers
-
-#### Relative Strength Index (RSI)
-- Measures momentum strength
-- Identifies overbought (>70) and oversold (<30) conditions
-
-#### MACD (Moving Average Convergence Divergence)
-- Captures momentum shifts
-- Used to identify trend reversals through MACD/signal crossovers
-
-#### Daily Returns
-- Percentage change in closing price
-- Used to evaluate short-term performance
-
-#### Volatility (20-day rolling std)
-- Measures risk and price instability
-- Highlights periods of high market uncertainty
+###  Task 3: Correlation between news sentiment and stock movement  
+- Used NLTK VADER to apply sentiment analysis on news headlines  
+- Calulated Daily Stock Returns
+- Computed the average daily sentiment score for each stock
+- Calculated the Pearson correlation coefficient between average daily sentiment scores and daily stock returns 
 
 
 ## Technologies Used
